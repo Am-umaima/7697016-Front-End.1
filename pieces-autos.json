@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "image":"images/ampoule-led.png",
         "nom": "Ampoule LED",
         "prix": 60,
         "categorie": "Optiques",
@@ -9,6 +10,7 @@
     },
     {
         "id": 2,
+        "image":"images/plaquettes-frein.png",
         "nom": "Plaquettes de frein (x4)",
         "prix": 40,
         "categorie": "Freinage",
@@ -17,14 +19,16 @@
     },
     {
         "id": 3,
+        "image":"images/ampoule-boite-a-gants.png",
         "nom": "Ampoule boîte à gants",
         "prix": 5.49,
         "categorie": "Optiques",
-        "description": "Pour y voir clair dans l’habitacle",
+        "description": "Pour y voir clair dans l’habitacle.",
         "disoniblite": false
     },
     {
         "id": 4,
+        "image":"images/liquide-frein.png",
         "nom": "Liquide de frein",
         "prix": 9.60,
         "categorie": "Freinage",
@@ -33,9 +37,10 @@
     },
     {
         "id": 5,
+        "image":"images/balai-essuie-glace.png",
         "nom": "Balai d'essuie-glace",
         "prix": 29.10,
-        "description": "Performances d’essuyage au top ! Longueur : 550 mm",
+        "description": "Performances d’essuyage au top ! Longueur : 550 mm.",
         "disoniblite": false
     }
 ]
