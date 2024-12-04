@@ -42,5 +42,32 @@
         "prix": 29.10,
         "description": "Performances d’essuyage au top ! Longueur : 550 mm.",
         "disoniblite": false
+    },
+    {
+        "id": 6,
+        "image": "images/boite-vitesses.png",
+        "nom": "Boîte de Vitesses",
+        "prix": 150.00,
+        "description": "Boîte de vitesses manuelle, 6 rapports. Idéale pour une conduite fluide et performante.",
+        "disponibilite": true,
+        "categorie": "Transmission"
+    },
+    {
+        "id": 7,
+        "image": "images/filtre-a-air.png",
+        "nom": "Filtre à air",
+        "prix": 25.00,
+        "categorie": "Moteur",
+        "description": "Filtration optimale pour un moteur performant.",
+        "disponibilite": true
+    },
+    {
+        "id": 8,
+        "image": "images/radiateur.png",
+        "nom": "Radiateur",
+        "prix": 120.50,
+        "categorie": "Refroidissement",
+        "description": "Radiateur haute performance pour un moteur bien refroidi.",
+        "disponibilite": true
     }
 ]
