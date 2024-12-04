@@ -6,6 +6,10 @@ const  YemmasSection= document.querySelector(".fiches")
 
 for (let index = 0; index < pieces.length; index++) {
     const article =pieces[index];
+    
+    
+    const ijeDiv= document.createElement("div")
+    YemmasSection.appendChild(ijeDiv)
 
     const Isamines= document.createElement("h2");
     Isamines.innerHTML=article.nom;
@@ -23,11 +27,11 @@ for (let index = 0; index < pieces.length; index++) {
     categorie.innerHTML=article.categorie ?? "(ila ya aucun categorie)";
     
     
-    YemmasSection.appendChild(tswatharticle)
-    YemmasSection.appendChild(Isamines)
-    YemmasSection.appendChild(taman)
-    YemmasSection.appendChild(inStock)
-    YemmasSection.appendChild(categorie)  
+    ijeDiv.appendChild(tswatharticle)
+    ijeDiv.appendChild(Isamines)
+    ijeDiv.appendChild(taman)
+    ijeDiv.appendChild(inStock)
+    ijeDiv.appendChild(categorie)  
 }
 
 
