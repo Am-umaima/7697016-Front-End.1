@@ -47,6 +47,7 @@ main {
 	margin: 8px;
 	flex-wrap: wrap; /* Allow items to wrap to the next line */
   /* gap: 100px;  */
+  
 }
 .fiches img {
 	max-width: 200px;
@@ -59,7 +60,7 @@ main {
 	border: 1px solid rgb(140, 140, 140);
 	padding: 20px;margin: 4px;
 	text-align: center;
-	flex: 1 1 calc(10% - 1px);
+	flex: 1 1 calc(20% - 1px);
   background-color: rgb(228, 240, 245);
 }
 
