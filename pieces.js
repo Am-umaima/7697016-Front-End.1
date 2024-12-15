@@ -68,4 +68,33 @@ IstherCategorie.addEventListener("click",function (){
     const filtersCategroiepieces =pieces.filter(function (pieces) {
         return pieces.categorie !== undefined && pieces.categorie !== null;
     });displayPieces(filtersCategroiepieces);
-})
+});
+
+
+// Make a copy of the pieces array
+const piecesCopy = Array.from(pieces);
+
+// Filter out or delete items only in the copied array
+for (let index = piecesCopy.length - 1; index >= 0; index--) {
+    if (piecesCopy[index].prix > 35) {
+        piecesCopy.splice(index, 1); // Modify the copy
+    }
+}
+
+// Use map on the modified copy to get only the names
+const mappingshit = piecesCopy.map(p => p.nom);
+const mappingshitPrix = piecesCopy.map(p => p.prix);
+
+// Create the list and add it to the 'ul' in the DOM
+const divArtic = document.querySelector(".maplist");
+divArtic.innerHTML = ""; // Clear the previous list
+const listul = document.createElement("ul");
+divArtic.appendChild(listul);
+
+for (let index = 0; index < mappingshit.length; index++) {
+    const listItem = document.createElement("li");
+    listItem.innerHTML = mappingshit[index]+" - "+mappingshitPrix[index]+"$";
+    listul.appendChild(listItem);
+}
+
+console.log(mappingshit); // Logs the modified copy of names
