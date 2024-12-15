@@ -100,7 +100,7 @@ for (let index = 0; index < mappingshit.length; index++) {
 
 //range
 const RangeFilter =document.querySelector("#price-range");
-RangeFilter.addEventListener("input",function () {
+RangeFilter.addEventListener("input",function () {document.querySelector("#price-value").innerHTML=RangeFilter.value; 
     const maxPrice = RangeFilter.value; 
     const filteredPieces = pieces.filter(piece => piece.prix <= maxPrice); 
     displayPieces(filteredPieces); 
