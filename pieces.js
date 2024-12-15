@@ -27,7 +27,7 @@ function displayPieces(piecesArray)
         const categorie= document.createElement("p");
         categorie.innerHTML=article.categorie ?? "(ila ya aucun categorie)";
         
-        
+
         ijeDiv.appendChild(tswatharticle)
         ijeDiv.appendChild(Isamines)
         ijeDiv.appendChild(taman)
@@ -36,15 +36,36 @@ function displayPieces(piecesArray)
     }
 }
 displayPieces(pieces);
-const btntrierprix =document.querySelector(".btn-trier");
 
-btntrierprix.addEventListener("click",function tireer() {alert("hey")
-    const piecesOrdonnees = Array.from(pieces);
-    piecesOrdonnees.sort(function (a,b) {
-       return a.prix-b.prix;
+const btntrierprix =document.querySelector(".btn-trierCr");
+btntrierprix.addEventListener("click",function () {
+    const piecesOrdonnees1 = Array.from(pieces);
+    piecesOrdonnees1.sort(function (elmentOne,elementTwo) {
+       return elmentOne.prix-elementTwo.prix;
     })
-    displayPieces(piecesOrdonnees);
-    console.log(piecesOrdonnees);
+    displayPieces(piecesOrdonnees1);
+});
+
+const btntrierprix2 =document.querySelector(".btn-trierDecr");
+btntrierprix2.addEventListener("click",function () {
+    const piecesOrdonnees2 = Array.from(pieces);
+    piecesOrdonnees2.sort(function (elmentOne,elementTwo) {
+       return elementTwo.prix-elmentOne.prix;
+    })
+    displayPieces(piecesOrdonnees2);
 })
 
+const btnfilter=document.querySelector(".btn-filtrer");
+btnfilter.addEventListener("click",function () {
+    const filterpieces=pieces.filter(function (pieces) {
+            return pieces.prix<35;
+        }
+    ); displayPieces(filterpieces);
+});
 
+const IstherCategorie = document.querySelector(".filtrer-discription");
+IstherCategorie.addEventListener("click",function (){
+    const filtersCategroiepieces =pieces.filter(function (pieces) {
+        return pieces.categorie !== undefined && pieces.categorie !== null;
+    });displayPieces(filtersCategroiepieces);
+})

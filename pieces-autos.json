@@ -3,7 +3,7 @@
         "id": 1,
         "image":"images/ampoule-led.png",
         "nom": "Ampoule LED",
-        "prix": 60,
+        "prix": 60.20,
         "categorie": "Optiques",
         "description": "Distance d’éclairage : 100 mètres !",
         "disoniblite": true
@@ -12,7 +12,7 @@
         "id": 2,
         "image":"images/plaquettes-frein.png",
         "nom": "Plaquettes de frein (x4)",
-        "prix": 40,
+        "prix": 40.01,
         "categorie": "Freinage",
         "description": "Une qualité de freinage optimale, par tous les temps.",
         "disoniblite": true
@@ -21,7 +21,7 @@
         "id": 3,
         "image":"images/ampoule-boite-a-gants.png",
         "nom": "Ampoule boîte à gants",
-        "prix": 5.49,
+        "prix": 15.49,
         "categorie": "Optiques",
         "description": "Pour y voir clair dans l’habitacle.",
         "disoniblite": false
@@ -30,7 +30,7 @@
         "id": 4,
         "image":"images/liquide-frein.png",
         "nom": "Liquide de frein",
-        "prix": 9.60,
+        "prix": 30.60,
         "categorie": "Freinage",
         "description": "Aucune description, ne pas rajouter de propriété.",
         "disoniblite": true
@@ -47,7 +47,7 @@
         "id": 6,
         "image": "images/boite-vitesses.png",
         "nom": "Boîte de Vitesses",
-        "prix": 150.00,
+        "prix": 151.00,
         "description": "Boîte de vitesses manuelle, 6 rapports. Idéale pour une conduite fluide et performante.",
         "disponibilite": true,
         "categorie": "Transmission"
@@ -56,7 +56,7 @@
         "id": 7,
         "image": "images/filtre-a-air.png",
         "nom": "Filtre à air",
-        "prix": 25.00,
+        "prix": 25.10,
         "categorie": "Moteur",
         "description": "Filtration optimale pour un moteur performant.",
         "disponibilite": true
