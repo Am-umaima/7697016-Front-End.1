@@ -19,7 +19,7 @@ function displayPieces(piecesArray)
         tswatharticle.src=article.image;
         
         const taman= document.createElement("p");
-        taman.innerHTML=`le prix : ${article.prix} MAD (${article.prix <35 ? "rkhisa" : "ghalya"})`;
+        taman.innerHTML=`le prix : ${article.prix} $ (${article.prix <35 ? "rkhisa" : "ghalya"})`;
     
         const inStock= document.createElement("p");
         inStock.innerHTML=article.disoniblite ? "En stock" : "Rupture de stock";
@@ -97,4 +97,11 @@ for (let index = 0; index < mappingshit.length; index++) {
     listul.appendChild(listItem);
 }
 
-console.log(mappingshit); // Logs the modified copy of names
+
+//range
+const RangeFilter =document.querySelector("#price-range");
+RangeFilter.addEventListener("input",function () {
+    const maxPrice = RangeFilter.value; 
+    const filteredPieces = pieces.filter(piece => piece.prix <= maxPrice); 
+    displayPieces(filteredPieces); 
+})
