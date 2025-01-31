@@ -1,11 +1,22 @@
-# 7697016-Front-End.1
+# Project Overview
 
-Code base du fil rouge pour le cours OpenClassrooms [Créez des pages web dynamiques avec JavaScript](https://openclassrooms.com/fr/courses/7697016-creez-des-pages-web-dynamiques-avec-javascript)
+This project was forked from OpenClassroom's course. It focuses on creating dynamic web pages with JavaScript and integrating data in JSON format.
 
-## Installation
+## Features
+- Dynamic page updates using JavaScript
+- JSON data integration for content rendering
+- Interactive UI with basic CSS styling
 
-Après avoir cloné le repo vous avez plusieurs options pour lancer le projet. 
+## Setup
+1. Clone the repository
+2. Install dependencies using `npm install`
+3. Start the project with `npm start`
 
-Si vous utiliser VSCode ou un autre éditeur de code avec une extersion de serveur web comme live server, vous pouvez lancer direcement votre site avec l'extension que vous utilisez habituellement. 
+## Technologies Used
+- **Languages**: HTML, CSS, JavaScript
+- **Data Format**: JSON
 
-Dans le cas contraire vous pouvez installer les dépendances de ce projet avec `npm install` puis lancer le projet via la commande `npm start`. Vous verrez dans le termninal le lien vers le site (par defaut http://127.0.0.1:8080 )
+## Usage
+Open the project in your browser to view and interact with the dynamic content.
+
+This project was originally part of an OpenClassroom course.
